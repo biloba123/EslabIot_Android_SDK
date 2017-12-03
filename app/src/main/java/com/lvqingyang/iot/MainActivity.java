@@ -15,8 +15,6 @@ import com.lvqingyang.iot.listener.GetDataListener;
 import com.lvqingyang.iot.listener.PostMsgListener;
 import com.lvqingyang.iot.net.EslabIot;
 
-import java.util.Date;
-
 public class MainActivity extends AppCompatActivity {
 
     private android.widget.EditText etdevice;
@@ -78,11 +76,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        EslabIot.getDataWithTime(2,new Date(),new Date(), new GetDataListener() {
+        EslabIot.getHistoryData(2,EslabIot.ORDER_ASC, new GetDataListener() {
             @Override
             public void succ(Reponse r) {
-                if (BuildConfig.DEBUG) Log.d(TAG, "succ: "+ r.getCode()+ " "+r.getMessage()+" "
-                        +(r.getData()==null));
+                if (r.getCode()==0) {//获取数据成功
+                    String data=r.getData();
+                    //将json格式数据进行装换
+                    //...
+                }else{//获取数据失败
+                    if (BuildConfig.DEBUG) Log.e(TAG, "load data fail "+r.getCode()+" "+r.getMessage() );
+                }
             }
 
             @Override

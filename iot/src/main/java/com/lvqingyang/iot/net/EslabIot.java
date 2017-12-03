@@ -36,8 +36,8 @@ import rx.schedulers.Schedulers;
 public class EslabIot {
     private static String API_KEY=null;
     private static final String TAG = "EslabIot";
-    private static final String ORDER_ASC = "asc";
-    private static final String ORDER_DESC = "desc";
+    public static final String ORDER_ASC = "asc";
+    public static final String ORDER_DESC = "desc";
 
     private EslabIot(){
     }
