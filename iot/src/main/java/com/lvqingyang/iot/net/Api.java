@@ -11,7 +11,7 @@ package com.lvqingyang.iot.net;
  * @blog https://biloba123.github.io/
  */
 public class Api {
-    public static final String POST_MESSAGE = "http://192.168.43.23:9000/upload";
+    public static final String POST_MESSAGE = "http://47.92.48.100:9000/upload";
 
     private static final String URL_GET_DATA = "http://47.92.48.100:8099";
     public static final String GET_HISTORY_DATA = URL_GET_DATA+"/iot/sdk/device/data";
