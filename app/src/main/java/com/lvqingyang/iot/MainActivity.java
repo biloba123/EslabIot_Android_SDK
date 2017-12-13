@@ -93,28 +93,6 @@ public class MainActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         });
-//        this.btnpost = (Button) findViewById(R.id.btn_post);
-//        this.etdata = (EditText) findViewById(R.id.et_data);
-//        this.etdevice = (EditText) findViewById(R.id.et_device);
-//
-//        EslabIot.init("eslabtest");
-//
-//        btnpost.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                EslabIot.postMessage(Integer.valueOf(etdevice.getText().toString()),
-//                        etdata.getText().toString(), new PostMsgListener() {
-//                    @Override
-//                    public void succ(String s) {
-//                    }
-//
-//                    @Override
-//                    public void error(Throwable e) {
-//                    }
-//                });
-//            }
-//        });
 
     }
 
