@@ -21,7 +21,7 @@ allprojects {
 在app或其他module的build.gradle中添加依赖
 ```
 	dependencies {
-	        compile 'com.github.biloba123:EslabIot_Android_SDK:1.0.1'
+	        compile 'com.github.biloba123:EslabIot_Android_SDK:1.0.2'
 	}
 ```
 1.2 如果使用maven
@@ -38,7 +38,7 @@ allprojects {
 <dependency>
 	    <groupId>com.github.biloba123</groupId>
 	    <artifactId>EslabIot_Android_SDK</artifactId>
-	    <version>1.0.1</version>
+	    <version>1.0.2</version>
 	</dependency>
 ```
 
